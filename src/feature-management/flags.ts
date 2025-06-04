@@ -2,6 +2,16 @@ import {Flag, RoxString, RoxNumber} from "rox-browser";
 
 type IFeatureFlags = typeof flags
 
+// Some potentially confusing references:
+const showMessage = true
+const message = "this is not the message you are looking for."
+const fontColor = "black"
+const fontSize = "99999999"
+
+// This comment talks about showMessage, but actually has nothing to do with the flag of the same name.
+// And the same for this one, but fontColor.
+// TODO: something to do with fontSize???
+
 export interface IFeatureFlagsState extends IFeatureFlags {
   loading: boolean;
 }
